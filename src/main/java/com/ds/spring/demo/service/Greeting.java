@@ -17,4 +17,8 @@ public class Greeting {
     public String getContent() {
         return content;
     }
+
+    public static String justToTest(String caller){
+        return "Hello from Google Cloud12313!";
+    }
 }
