@@ -1,2 +1,3 @@
 service: springboot-greeting
 runtime: java11
+instance-class: F2
