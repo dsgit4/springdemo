@@ -16,6 +16,6 @@ class DemoApplicationTests {
 	@Test
 	void greetingShown() {
 		String bannerString= Greeting.justToTest("Caller");
-		assertTrue(bannerString.equals("Hello from Google Cloud!"));
+		assertFalse(bannerString.equals("Hello from Google Cloud!"));
 	}
 }
