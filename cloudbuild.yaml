@@ -16,16 +16,6 @@ steps:
         if [[ $(< /workspace/build-status.txt) == "fail" ]]; then
           exit 1
         fi
-
-  - id: Bubble Maven result
-    name: 'gcr.io/cloud-builders/mvn'
-    entrypoint: 'bash'
-    args:
-      - '-c'
-      - |
-        if [[ $(< /workspace/build-status.txt) == "fail" ]]; then
-          exit 1
-        fi
   - name: "gcr.io/cloud-builders/gcloud"
     args: ["app", "deploy"]
 timeout: "1600s"
