@@ -15,5 +15,6 @@ automatic_scaling:
     target_utilization: 0.6
   target_concurrent_requests: 100
   min_idle_instances: 1
-static_files:
-  include_path: "**/webfiles/**.html"
+
+#handlers:
+# include_path: "**/webfiles/**.html"
